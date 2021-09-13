@@ -1,0 +1,729 @@
+* 
+
+	 /* universal selector */
+	*,
+	::after,
+	*::before{
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+	}
+
+	html{
+	   font-size: 62.5%;  /* 1 rem = 10px ; 10px/16px = 62.5% */
+	   
+	}
+
+
+	/* phone- 600px; 
+	tab-port- 900px
+	tab-land - 1200px
+	desktop - 1800px // since our firt design is desktop, it's not needed
+	big desktop - 1800px and above  */
+
+	/* use em, 1em = 16px*/
+
+
+
+
+
+
+	body {
+		font-family: sans-serif;
+		font-weight: 400;
+		/* font-size: 16px; */
+		line-height: 1.7;
+	
+		box-sizing: border-box;
+	}
+
+
+
+    .navigation{
+        display: inline-block;
+
+        display: flex;
+      
+       }
+       
+       .navigation-checkbox{
+           display: none;
+       }
+       .navigation-button{
+         display: none;
+       
+       }
+
+       .navigation-background{
+           display: none;
+       }
+       .navigation-nav{
+           
+       display: inline;
+
+       
+       }
+
+       .navigation-item{
+           display: inline-block;
+           
+       }
+
+       
+       .navigation-item :hover{
+        transform: translateY(-0.3rem);
+        opacity: 1;
+        
+        background-color: dodgerblue;
+        color: white;
+        padding: 0.5rem; 
+        border-radius: .3rem;
+       }
+
+       .arrow-down{
+        padding-top: .4rem;
+        height: 1.3rem;
+        width: 1.3rem;
+    }
+    
+       .menu{
+           display: inline-block;
+       }
+
+       .navigation-list{
+           display: flex;
+           list-style: none;
+           width: 100vw;
+
+           justify-content: space-between;
+           align-items: center;
+            height: 5rem;
+
+           background-color: #f6f6f6;
+           box-shadow: 0 1.5rem 4rem rgb(0 0 0 / 30%);
+           
+       }
+      
+       .navigation-list :hover{
+      
+       }
+
+       .navigation-link, .navigation-link:link, .navigation-link:visited{
+        display: inline-block;
+        text-decoration: none;
+     
+        text-decoration: none;
+        color: black ;
+        display: inline-block;
+        margin: 1rem;
+        font-size: 1rem;
+       }
+
+      .navigation-segment{
+          padding-left: 2rem;
+          padding-right: 2rem;
+      }
+        
+      
+        .navigation-link:hover, .navigation-link:active{
+            background-position: 100%;
+            transform: translateX(1rem);
+        }
+        
+      
+       
+        
+        .navigation-icon{
+            display: none;
+          
+        }
+       
+        
+    
+        .content{
+            margin-top: 10%;
+            margin-left: 25%;
+            margin-right: 25%;
+
+            display: flex;
+            justify-content: space-between;
+            /* height: 10%; */
+            width: 40%;
+            /* margin: 10% auto; */
+            /* max-height: 10rem; */
+            /* border: 1px solid blue; */
+         
+          
+        
+        }
+        
+        .content-flex{
+            flex-basis: 100%;
+            width: 10%;
+          
+            /* margin-left: 1.5rem; */
+            /* background-color: red; */
+         
+        }
+        
+        .content-image{
+          
+           height: 140%; 
+            margin-top: -6rem;
+            
+            display: inline-block;
+            max-width: 125%;
+            position: relative;
+            top: 0.5rem;
+            /* background-color: blue; */
+        
+        }
+        
+        .content-foot{
+            display: block;
+            border-radius: 70px;
+            background-color: dodgerblue;
+            width: 25rem;
+            height: 4rem;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0.5rem;
+            padding-left: 1rem;
+            padding-right: 1rem;
+        }
+        
+        
+        
+        .heading-secondary     {
+            color: white;
+            text-transform: uppercase;
+            font-size: .9rem;
+            font-weight: 600;    
+        }   
+        
+        .content-text{
+           font-size: 2.5rem; 
+           font-weight: 900px;
+           font-family: Arial, Helvetica, sans-serif;
+           font-weight: 550;
+        }
+        
+        .content-text-main{
+            font-size: 2.2rem; 
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 550;
+            margin-bottom: 0;
+            padding-bottom: 0;
+            color: black;
+        }
+        
+        .content-text-tertiary{
+            margin-top: 1rem;
+            font-size: .8rem;
+            margin-top: 0;
+           }
+        
+        .content-text-secondary{
+            font-size: 2.5rem; 
+            font-weight: 900px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 550;
+            margin-top: -1rem;
+            margin-bottom: .6rem;
+        }
+        
+        
+        .content-foot{
+            display: flex;
+            margin-top: 5%;
+            align-items: center;
+            background-color: dodgerblue;
+            color: white ;
+           
+            width: 90%;
+            height: 18%;
+            align-content: space-between;
+            padding-right: .7rem;
+            /* align-content: flex-start; */
+        }
+        
+        .content-foot-button-div{
+           
+        }
+        
+        .content-foot-button{
+            background-color: white ;
+            border-radius: 70px;
+            border-width: 0;
+            padding: 0.5rem;
+            padding-left: 1.5rem;
+            padding-right: 1.5rem;
+            color: red;
+            font-size: 1rem;
+            margin-top: 0rem;
+           
+          
+        }
+        
+        .content-foot-button:hover{
+            transform: translateY(-0.1rem);
+            opacity: 1;
+            color: white;
+            background-color: darkgrey;
+              
+        }
+        
+        footer {
+           
+           
+         
+        }
+        
+        .footer-image {
+            
+            float: left;
+            display: block;
+            position: relative;
+            max-width: 100%;
+           
+            
+        }
+        
+        .footer-background{
+            width:100%;
+            position: absolute;
+            bottom:0;
+        }
+     
+        
+      /* /////////////////////////////////////////////////////////////////////////////////////////////  */
+    
+      @media only screen and (max-width: 1200px){
+        html{
+                font-size: 52.25% ;   /* i want 1 rem = 9px ; 10px/16px = 56.25% */
+            }
+            .content{
+                margin-top: 15%;
+                          
+            
+            }
+    
+    }
+
+    
+       
+      @media only screen and (max-width: 937px){
+        html{
+    font-size: 49% ;  /* i want 1 rem = 12px ; 8px/16px = 50% */
+        } 
+
+
+        .navigation-link, .navigation-link:link, .navigation-link:visited{
+            display: inline-block;
+            text-decoration: none;
+         
+            text-decoration: none;
+            color: black ;
+            display: inline-block;
+            margin: .6rem;
+           }
+    
+          .navigation-segment{
+              padding-left: .7rem;
+              padding-right: 0.7rem;
+          }
+        
+          .content-text-main{
+            font-size: 2.2rem; 
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 550;
+            margin-bottom: 0;
+            padding-bottom: 0;
+            color: black;
+        }
+        
+        .content-text-tertiary{
+            margin-top: 1rem;
+            font-size: .8rem;
+            margin-top: 0;
+
+           }
+        
+        .content-text-secondary{
+            font-size: 2.5rem; 
+            
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 550;
+            margin-top: -1rem;
+            margin-bottom: .6rem;
+        }
+
+        .content{
+            margin-top: 18%;
+            margin-left: 20%;
+            margin-right: 25%;
+            display: flex;
+            justify-content: space-between;
+            /* height: 10%; */
+            width: 50%;
+            column-gap: 3rem;
+            /* margin: 10% auto; */
+            /* max-height: 10rem; */
+          
+        
+        }
+
+        .content-flex{
+            
+            flex-basis: 100%; 
+           
+            /* margin-left: 1.5rem; */
+            /* background-color: red; */
+            width: 100%;
+            /* max-height: 3rem; 
+            max-width: 100rem; */
+            padding-left: 0rem;
+        }
+        
+        .content-image{
+          
+           height: 140%; 
+            margin-top: -6rem;
+            
+            display: inline-block;
+            max-width: 125%;
+            position: relative;
+            top: 0.5rem;
+            /* background-color: blue; */
+        
+        }
+            
+
+    }
+   
+    @media only screen and (max-width: 715px){
+        html{
+    font-size: 42% ;  /* i want 1 rem = 12px ; 8px/16px = 50% */
+        } 
+
+    }
+
+       @media only screen and (max-width: 638px){
+        html{
+    font-size: 48% ;  /* i want 1 rem = 12px ; 8px/16px = 50% */
+        } 
+
+
+        .header{
+            height: 95vh;
+            background-image: linear-gradient(to right, 
+            rgba(173, 183, 230, 0.856) , rgba(0, 0, 255, 0.836) ),
+            url(../img/wynn-3.jpg);
+            background-size: cover;
+            background-position: top;  
+            -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh  , 0 100%);
+            clip-path: polygon(0 0, 100% 0, 100% 75vh  , 0 100%); 
+            position: relative;
+          
+ 
+        }
+
+
+        .content-text-main{
+            font-size: 2rem; 
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 550;
+            margin-bottom: 0;
+            padding-bottom: 0;
+            color: black;
+        }
+    
+        .content-text-tertiary{
+            margin-top: 1rem;
+            font-size: .8rem;
+            margin-top: 0;
+
+           }
+        
+        .content-text-secondary{
+            font-size: 2.5rem; 
+            
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 550;
+            margin-top: -1rem;
+            margin-bottom: .6rem;
+        }
+    
+        .navigation{
+            position: relative;
+            background-color: white;
+            display: block;
+           }
+           
+           .navigation-checkbox{
+               display: none;
+           }
+           .navigation-button{
+               display: unset;
+               background-color: white;
+               height: 7rem;
+               width: 7rem;
+               position: fixed;
+               top: 4rem;
+               right: 3rem;
+               border-radius: 50%;
+               z-index: 2000 ;
+               box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.132);
+               transition: all .2s;
+               text-align: center;
+               cursor: pointer;
+           
+           }
+           .navigation-background{
+               display: unset;
+               height: 4.5rem;
+               width: 5rem;
+              
+               position: fixed;
+               background-color: white;
+               /* background-image: radial-gradient(lightblue, blue); */
+               top: 4.8rem;
+               right: 4rem;
+               z-index: 1000;
+            
+               /* transform: scale(50); */
+               transition: all .8s cubic-bezier(0.86, 0, 0.07, 1);  /* check for easing functions on google to get digit combo */;
+           
+           }
+           .navigation-nav{
+               height: 100vh;
+               
+               position: fixed;
+               top: 0;
+               right: 0;
+               z-index: 1500;
+               opacity: 0;
+               width: 0;
+                transition: all .8s; 
+           
+           
+           
+           }
+           .navigation-list{
+               display: unset;
+               position: absolute;
+               top: 50%;
+               left: 50%;
+               transform: translate(-50%, -50%);
+               list-style: none;
+               text-align: center;
+               width: 100%;
+               background-color: unset;
+               height: unset;
+           }
+           .navigation-item{
+               margin: 1rem;
+               display: block;
+           
+           }
+
+
+           .arrow-down{
+            padding-top: 0rem;
+            height: 1rem;
+            width: 1rem;
+            color: blue;
+        }
+        
+
+           .navigation-link, .navigation-link:link, .navigation-link:visited{
+            display: inline-block;
+            font-size: 30rem;
+            font-weight: 300;
+
+           }
+            .navigation-link, .navigation-link:link, .navigation-link:visited{
+                display: inline-block;
+                font-size: 3rem;
+                font-weight: 300;
+                padding: .8rem 2rem;
+                
+               
+                color: blue;
+                text-decoration: none;
+                text-transform: uppercase;
+                background-size: 224%;
+                background-image: linear-gradient(120deg, transparent 0%,
+                                                        transparent  50%,
+                                                        white 50%);
+                transition: all .5s step-end;
+                font-size: 1.1rem;
+            }
+            
+          
+            .navigation-link:hover, .navigation-link:active{
+                background-position: 100%;
+                transform: translateX(1rem);
+                
+            }
+            
+            .navigation-checkbox:checked ~ .navigation-background{
+                opacity: 1;
+                transform: scale(80);
+            }
+            
+            .navigation-checkbox:checked ~ .navigation-nav{
+                opacity: 1;
+                width: 100%;
+            }
+            
+            .navigation-icon{
+            display: unset;
+              position: relative;
+              margin-top: 3.3rem;
+              
+            }
+            .navigation-icon, .navigation-icon:before, .navigation-icon:after{
+                width: 3rem;
+                height: 2px;
+                background-color: #333;
+            
+                display: inline-block;
+            
+            }
+            
+            .navigation-icon:before, .navigation-icon:after{
+               
+                content: "";
+                position: absolute;
+                top: 10rem;
+                left: 0;
+                transition: all .2s;
+            
+            }
+            
+            .navigation-icon:before{
+                top: -1rem;
+            }
+            
+            .navigation-icon:after{
+                top: 1rem;
+            }
+            
+            .navigation-button:hover  .navigation-icon:before{
+                top: -1.1rem;
+            }
+            
+            .navigation-button:hover  .navigation-icon:after{
+                top: 1.1rem;
+            }
+            
+            .navigation-checkbox:checked + .navigation-button .navigation-icon{
+                background-color: transparent;
+            }
+            
+            .navigation-checkbox:checked + .navigation-button .navigation-icon:before{
+                transform: rotate(45deg);
+                top: 0;
+                left: 0;
+            
+            }
+            
+            .navigation-checkbox:checked + .navigation-button .navigation-icon:after{
+                transform: rotate(-45deg);
+                top: 0;
+                right: 0;
+            }
+
+            .content{
+               
+                display: flex;
+                margin-top: 15rem;
+                margin-left: 20%;
+                margin-right: 30%;
+                flex-direction: column-reverse;
+                grid-auto-flow: dense;
+                /* direction: ltr; */
+
+                /* justify-content: unset; */
+
+                row-gap: 5rem;
+              
+                /* height: 10%; */
+                width: 40%;
+                height: 30%;
+                
+                /* margin: 10% auto; */
+                /* max-height: 10rem; */
+              
+            
+            }
+            
+            .content-flex{
+                /* flex-basis: 50%; */
+                width: 150%;
+                padding-left: 2rem;
+                /* margin-left: 1.5rem; */
+            
+            }
+            
+            .content-image{
+              
+               height: 130%; 
+                margin-top: 0rem;
+                
+                display: inline-block;
+                max-width: 20rem;
+                position: relative;
+                top: 0.5rem;
+            
+            }
+            
+            .content-foot{
+                display: flex;
+                border-radius: 70px;
+              
+                width: 15rem;
+                height: 3rem;
+                align-items: center;
+                justify-content: space-between;
+              
+                padding-left: .55rem;
+                padding-right: .55rem;
+                font-size: .8rem;
+            }
+
+            .content-foot-button{
+                background-color: white ;
+                border-radius: 70px;
+                border-width: 0;
+                padding: 0.5rem;
+                padding-left: 1.5rem;
+                padding-right: 1rem;
+                color: red;
+                font-size: .48rem;
+                margin-top: 0rem;
+                height: 2rem;
+               
+              
+            }
+            
+            .content-foot-button:hover{
+                transform: translateY(-0.1rem);
+                opacity: 1;
+                color: white;
+                background-color: darkgrey;
+                  
+            }
+            
+    }
+
+
+    @media only screen and (min-width: 1800px){
+        html{
+    font-size: 75% ;  /* i want 1 rem = 12px ; 10px/16px = 75% */
+        }  
+}
+
+
+
